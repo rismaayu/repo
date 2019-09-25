@@ -1,0 +1,261 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:calibri, "segoe ui", arial, tahoma, sans-serif;
+}
+body{
+	background : url(background.jpg);
+	background-repeat : repeat;
+}
+#wrapper{
+	width : 780px;
+	margin: 0 auto;
+	margin-top:30px;
+	overflow: hidden;
+}
+#header {
+	height: 80px;
+	width: 100%px;
+	position: relative;
+	background: #FF9933 top left no-repeat;
+	padding: 45px;
+	color: #FFFFFF;	
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: hidden;
+}
+h1{
+	font-family: Georgia;
+}
+#logo {
+	line-height: 160px;
+	height: 160px;
+	padding: 5px 0 0 0;
+	position: absolute;
+	top: 0;
+	left: 45px;
+	color: #FFFFFF;
+	text-shadow: 0 1px 1px #3E3E3E;
+	font-size: 21px;
+}
+#slogan {
+	line-height: 160px;
+	height: 160px;
+	padding: 5px 0 0 0;
+	position: absolute left;
+	right: 45px;
+	top: 0;
+	color: #FFFFFF;
+	font-size: 18px;
+	text-shadow: 0 1px 1px #3E3E3E;
+}
+#menu {
+	padding: 0 45px 0 45px;
+	position: relative;
+	background:#00CCCC repeat-x top left;
+	margin: 0;
+	height: 40px;
+	width: 100%px;
+	border-top: solid 1px #00FFFF;
+	border-bottom: solid 1px #3399FF;
+	text-shadow: 0 1px 1px #007D7D;
+}
+
+#menu ul {
+	list-style: none;
+	padding-top: 5px;
+	position: relative;
+	left: -15px;
+}
+#menu ul li {
+	padding: 5px 15px 5px 15px;
+	margin-right: 10px;
+	display: inline-block;
+}
+#menu ul li a, #menu ul li span {
+	text-decoration: none;
+	color: #FFFFFF;
+	letter-spacing: -1px;
+	font-size: 1.25em;
+}
+
+
+#slider {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	margin-top:0px;
+}
+
+.slide {
+	width: 550px;
+	height: 300px;
+	float: left;
+	position: relative;
+}
+
+#slide-holder {
+	width: 400%;
+	position: relative;
+	left: 0;
+	-webkit-animation: scroller 10s infinite;
+          animation: scroller 10s infinite;
+}
+
+@-webkit-keyframes scroller {
+	0% {
+		-webkit-transform: translateX(0);
+            transform: translateX(0);
+	}
+	33% {
+		-webkit-transform: translateX(-450px);
+            transform: translateX(-450px);
+	}
+	66% {
+		-webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+            transform: translateX(0);
+	}
+}
+
+@keyframes scroller {
+	0% {
+		-webkit-transform: translateX(0);
+            transform: translateX(0);
+	}
+	33% {
+		-webkit-transform: translateX(-450px);
+            transform: translateX(-450px);
+	}
+	66% {
+		-webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+	}
+}
+
+.slide:nth-child(1) {
+	background: #c69;
+}
+
+.slide:nth-child(2) {
+	background: wheat;
+}
+
+.slide:nth-child(3) {
+  background: #eee;
+}
+#artikel-cerita{
+	width:550px;
+	float:left;
+	background:	#D8BFD8;
+	margin-top : 20px;
+}
+#artikel-cerita h1{
+	margin:10px 20px 10px 20px ;
+	font-size:26px;
+}
+.artikel{
+	padding:10px;
+	margin-bottom:20px;
+	border-top:2px dashed #111111; 
+	overflow:hidden;
+}
+.artikel img{
+	float:left;
+	margin-right:10px;
+	width:200px;
+	height:165px;
+}
+.artikel b{
+	color:#616060;
+	background:#DDDDDD;
+	padding:3px;
+	font-size:12px;
+	font-weight:bold;
+}
+.artikel p{
+	margin:10px 0;
+	text-align:justify;
+}
+.artikel a{
+	display:block;
+	text-align:right;
+	color:#636363;
+	
+}
+#sidebar{
+	width:199px;
+	height:671px;
+	padding:15px;
+	float:right;
+	margin-top:20px;
+	overflow:none;
+	background: #FFC0CB;
+	border-left: 1px #111111 solid;
+}
+.sidebar{
+	margin-bottom:30px;
+}
+.sidebar h2{
+	font-size:18px;
+	height: 20px;
+	margin-bottom:5px;
+	padding: 5px 5px 5px 5px;
+	background: #CCFFCC;
+	font-weight: normal;
+	color: #000000;
+}
+.sidebar p{
+	line-height:20px;
+	color : #636363;
+}
+.sidebar ul{
+	margin-left:20px; 
+}
+.sidebar ul li a{
+	color:#636363;
+	text-decoration:none; 
+}
+.search form {
+	padding: 20px;
+}
+a:hover {
+	color : red;
+}
+a:link{
+	color : blue;
+}
+a:visited {
+	color : green;
+}
+a:hover {
+	color : red;
+}
+a:active {
+	color : orange;
+}
+#coment{
+	width:100%;
+	background: #87CEFA	;
+	float : left;
+	padding:5px 0 10px 20px;
+	margin-top: 20px;
+	margin-bottom : 20px;
+}
+#footer{
+	clear:both;
+	margin-bottom:20px;
+	text-align:center;
+	background-color:#FF9933 ;
+	padding:5px;
+	color:#111111;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
